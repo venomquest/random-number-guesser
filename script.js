@@ -1,14 +1,4 @@
 'use strict';
-/*
-console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = '🎉Correct secretNumber!';
-document.querySelector('.secretNumber').textContent = 13;
-document.querySelector('.score').textContent = 10;
-
-document.querySelector('.guess').value = 23;
-console.log(document.querySelector('.guess').value); // To get the actual value(use value property)
-*/
-
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
@@ -73,16 +63,3 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
 });
-
-/*
-Coding Challenge #1
-Implement a game rest functionality, so that the player can make a new guess!
-Your tasks:
-1. Select the element with the 'again' class and attach a click event handler //similar to the check button
-2. In the handler function, restore initial values of the 'score' and
-'secretNumber' variables
-3. Restore the initial conditions of the message, number, score and guess input
-fields
-4. Also restore the original background color (#222) and number width (15rem)
-GOOD LUCK 😀
-*/
